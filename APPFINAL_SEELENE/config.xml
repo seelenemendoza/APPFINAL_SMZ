@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id = "com.phonegap.smz"
+version = "1.0.0">
+
+<name>Catalogo Mendoza</name>
+
+<description>
+Aplicacion de e-commerce Perfume
+</description>
+
+<author href="https://example.com" email="seelenemendoza@hotmail.com">
+Seelene Mendoza
+</author>
+
+<icon src="imagenes/p.png" gap:density="ldpi" gap:platform="android" />
+<icon src="imagenes/p.png" gap:density="mdpi" gap:platform="android" />
+<icon src="imagenes/p.png" gap:density="hdpi" gap:platform="android" />
+<icon src="imagenes/p.png" gap:density="xhdpi" gap:platform="android" />
+
+</widget>

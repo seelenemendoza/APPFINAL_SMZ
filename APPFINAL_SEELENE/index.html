@@ -1,0 +1,1124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Catalogo Mendoza</title>
+<link href="themes/style.min.css" rel="stylesheet" type="text/css" />
+
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css" />
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div data-role="page" id="home" data-theme="c">
+  <div data-role="header" data-theme="c">
+    <h1>Productos</h1>
+     <a href="#agregar"><img src="imagenes/mas.png" height="30" width="30"></a>
+     <a href="#informacion"><img src="imagenes/info.png" height="30" width="30"></a>
+     <br>
+  </div>
+
+  <div data-role="content">
+    <div align="center"><img src="imagenes/logo.png"/></div><br>
+      
+        <div data-role="collapsible">
+        <h3>Damas</h3><br>
+         <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar">
+            <li><a href="#informacion1"><h3>Signoria Salvatore Ferragamo</h3></a> 
+            <a href="#editar1"><img src="imagenes/edit.png"/></a></li>
+            
+            <li><a href="#informacion2">
+            <h3>Fragancia Gold Tous</h3>
+            </a><a href="#editar2"></a></li>
+            
+            <li><a href="#informacion3">
+            <h3>Fragancia Ferrioni Verde</h3>
+            </a><a href="#editar3"></a></li>
+            
+         </ul><br>
+        </div>
+
+        <div data-role="collapsible">
+        <h3>Caballeros</h3><br>
+         <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar">
+            <li><a href="#informacion4">
+            <h3>Classic Swiss Army </h3>
+            </a><a href="#editar4"></a></li>
+            
+            <li><a href="#informacion5">
+            <h3>Fragancia Michael Kors</h3>
+            </a><a href="#editar5"></a></li>
+            
+            <li><a href="#informacion6">
+            <h3>Fraiche Versace </h3>
+            </a><a href="#editar6"></a></li>
+         </ul><br>
+        </div>
+
+        <div data-role="collapsible">
+        <h3>Niños</h3><br>
+         <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar">
+            <li><a href="#informacion7">
+            <h3>Yellow Bird</h3>
+            </a><a href="#editar7"></a></li>
+            
+            <li><a href="#informacion8">
+            <h3>Fragancia Tous baby </h3>
+            </a><a href="#editar8"></a></li>
+            
+            <li><a href="#informacion9">
+            <h3>Candy Crush Sweet</h3>
+            </a><a href="#editar9"></a></li>
+         </ul><br>
+        </div>
+     
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li> <a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#agregar" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+ </div>
+ 
+
+<!--ACERCA DE MII-->
+<div data-role="page" id="informacion" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Acerca de mí</h1>
+   </div>
+   <div data-role="content">
+      <div align="center"><img src="imagenes/fotos/5.jpg" width="250px" height="400px"></div><br><br>
+      <div align="center">
+      	 <b>Nombre:</b><br><br>Seelene Mendoza Zamudio<br><br>
+      	 <b>Carrera:</b><br><br> Ing. En Sistemas de Información<br><br>
+      	 <b>Materia:</b><br><br> Desarrollo de Aplicaciones para Comercio Electronico<br><br>
+      	 <b>Preferencias:</b><br><br> ver t.v y dormir.
+      </div>	
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<!-- Agregar Productos-->
+<div data-role="page" id="agregar" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Agregar Producto</h1>
+   </div>
+   <div data-role="content">
+     <p align="center"><img src="imagenes/form.png"></p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value=""  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value=""  placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <input type="file" name="imagen" id="imagen" value="" placeholder="Ingresa tu Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7"></textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="1000" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="10" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" />
+         <label for="radio1_0">Damas</label>
+         
+         <input type="radio" name="radio1" id="radio1_1" value="" />
+         <label for="radio1_1">Caballeros</label>
+         
+         <input type="radio" name="radio1" id="radio1_2" value="" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="date" name="textinput4" id="textinput4" value="" placeholder="Ingresa la Fecha" />
+     </div>
+     <p align="center">
+    <a href="#save"><img src="imagenes/add.png" height="90" width="90"></a>
+    <a href="#home"><img src="imagenes/cancel.png" height="90" width="90"></a>
+    <p>  
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#informacion" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<!--informacion-->
+<div data-role="page" id="info"  data-theme="c">
+   <div data-role="header"  data-theme="c">
+     <h1>Informacion</h1>
+   </div>
+   <div data-role="content">
+   <p align="center"><img src="imagenes/Information.png"></p>
+   <p align="justify">
+     Aplicación desarrollada mediante PhoneGap para Proyecto Final
+     Por Seelene Mendoza Zamudio ­ Mayo de 2016
+   </p>
+   <a href="#home" data-role="button">Cerrar</a>
+   </div>
+ </div>
+</body>
+</html>
+
+<!--Informacion del Producto-->
+
+<div data-role="page" id="informacion1" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Signoria</h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/ferragamo1.png"></div><br>
+    <div align="center"><img src="imagenes/Ferragamo_Rosa.png" width="286" height="185"></div><br>
+    <p align="center">
+      <b>Clave:</b><br><br>001.<br><br>
+      <b>Descripción:</b><br><br> Botella y tapa rosa con detalle de listón.<br><br>
+      <b>Precio:</b><br><br> $1,620.<br><br>
+      <b>Existencia:</b><br><br> 10.<br><br>
+      <b>Categoria:</b><br><br> Dama.<br><br>
+      <b>Fecha Registro:</b><br><br> 28/05/2016.
+    <p>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#informacion2" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion2" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Gold Tous</h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/tous.png"></div><br>
+    <div align="center"><img src="imagenes/Tous_mujer.png" width="286" height="185"></div><br>
+    <div align="center">
+    <b>Clave:</b><br><br>m002.<br><br>
+    <b>Descripción:</b><br><br> Almizcle blanco, gardenia aguda, femenina peonía y delicada flor de azahar.<br><br>
+    <b>Precio:</b><br><br> $1,300.<br><br>
+    <b>Existencia:</b><br<br> 10.<br><br>
+    <b>Categoria:</b><br><br> Dama.<br><br>
+    <b>Fecha Registro:</b><br><br> 28/05/2016.
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#informacion3" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion3" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Ferrioni Verde</h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/f.png"></div><br>
+    <div align="center"><img src="imagenes/ferroni_mujer.png" width="286" height="185"></div><br>
+    <div align="center">
+      <b>Clave:</b><br><br> m003<br><br>
+      <b>Descripción:</b><br><br> Botella verde con tapa plateada.</li><br><br>
+      <b>Precio:</b><br><br> $920<br><br>
+      <b>Existencia:</b><br><br> 15<br><br>
+      <b>Categoria:</b><br><br> Dama<br><br>
+      <b>Fecha Registro:</b><br><br> 28/05/2016.
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#home" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion4" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Classic Swiss Army </h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/s.png"></div><br>
+    <div align="center"><img src="imagenes/swissarmy_hombre.png" width="286" height="185"></div><br>
+    <div align="center">
+    <b>Clave:</b><br><br> h001.<br><br>
+    <b>Descripción:</b><br><br> Una fragancia aromática fresca para los caballeros que son sinónimo de refinamiento y visión.<br><br>
+    <b>Precio:</b><br><br> $1,160.<br><br>
+    <b>Existencia:</b><br><br> 5.<br><br>
+    <b>Categoria:</b><br><br> Caballero.<br><br>
+    <b>Fecha Registro:</b><br><br> 28/05/2016.
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#informacion5" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion5" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Michael Kors</h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/MK.png"></div><br>
+    <div align="center"><img src="imagenes/MK_hombre.png" width="286" height="185"></div><br>
+    <div align="center">
+    <b>Clave:</b><br><br> h002.<br><br>
+    <b>Descripción:</b><br><br> Originado en Estados Unidos.<br><br>
+    <b>Precio:</b><br><br> $1,240.<br><br>
+    <b>Existencia:</b><br><br> 12.<br><br>
+    <b>Categoria:</b><br><br> Caballero.<br><br>
+    <b>Fecha Registro:</b><br><br> 28/05/2016.</ul>
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal" data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#informacion6" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion6" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Fraiche Versace </h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/v.png"></div><br>
+    <div align="center"><img src="imagenes/Versace_hombre.png" width="286" height="185"></div><br>
+    <div align="center">
+    <b>Clave:</b><br><br> h003.<br><br>
+    <b>Descripción:</b><br><br> Limón blanco, madera de palo rosa, corazón de hojas de cedro, estragón, salvia, sicomoro, almizcle y ámbar.</li><br><br>
+    <b>Precio:</b><br><br> $1,440.<br><br>
+    <b>Existencia:</b><br><br> 11.<br><br>
+    <b>Categoria:</b><br><br> Caballero.<br><br>
+    <b>Fecha Registro:</b><br><br> 28/05/2016.
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#home" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion7" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Yellow Bird</h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/an.png"></div><br>
+    <div align="center"><img src="imagenes/Yellow_ninos.png" width="286" height="185"></div><br>
+    <div align="center">
+      <b>Clave:</b><br><br> n001.<br><br>
+      <b>Descripción:</b><br><br> Botella transparente con forma de angry bird.<br><br>
+      <b>Precio:</b><br><br> $305.<br><br>
+      <b>Existencia:</b><br><br> 10.<br><br>
+      <b>Categoria:</b><br><br> Niño.<br><br>
+      <b>Fecha Registro:</b><br><br> 28/05/2016.
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+
+
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#informacion8" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion8" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Tous baby</h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/tous.png"></div><br>
+    <div align="center"><img src="imagenes/Tous_ninos.png" width="286" height="185"></div><br>
+    <div align="center">
+    <b>Clave:</b><br><br> h002.<br><br>
+    <b>Descripción:</b><br><br> Envase trasparente y verde<br><br>
+    <b>Precio:</b><br><br> $780<br><br>
+    <b>Existencia:</b><br><br> 13<br><br>
+    <b>Categoria:</b><br><br> Niño<br><br>
+    <b>Fecha Registro:</b><br><br> 28/05/2016.
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal" data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#informacion9" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="informacion9" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Candy Crush Sweet</h1>
+   </div>
+   <div data-role="content">
+    <div align="center"><img src="imagenes/candy.png"></div><br>
+    <div align="center"><img src="imagenes/CandyCrush_ninos.png" width="286" height="185"></div><br>
+     <div align="center">
+      <b>Clave:</b><br><br> h003.<br><br>
+      <b>Descripción:</b><br><br>País de origen España. El juego más emocionante trae su nueva fragancia Candy Crush Sweet para ti con notas de manzana, ciruelas, rosas, lilis y vainilla.<br><br>
+      <b>Precio:</b><br><br> $500.<br><br>
+      <b>Existencia:</b><br><br> 10.<br><br>
+      <b>Categoria:</b><br><br> Niño.<br><br>
+      <b>Fecha Registro:</b> <br><br>28/05/2016.
+    </div>
+    <p align="center">
+    <a href="#carrito"><img src="imagenes/cart.png" height="90" width="90"></a>
+    <a href="#pay"><img src="imagenes/paypal.png" height="100" width="100"></a>
+    <p>
+
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#home" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<!--prueba-->
+
+<!--edicion del Producto-->
+<div data-role="page" id="editar1" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="m001"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Signoria Ferragamo"  placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/Ferragamo_Rosa.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Botella y tapa rosa con detalle de listón.</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="1620" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="10" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" checked="checked" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value="" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar2" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="m002"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Gold Tous" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/Tous_mujer.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Almizcle blanco, gardenia aguda, femenina peonía y delicada flor de azahar.</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="1300" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="10" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" checked="checked" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value="" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar3" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="m003"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Ferrioni Verde" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/ferroni_mujer.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Botella verde con tapa plateada.</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="920" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="15" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" checked="checked" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value="" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar4" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="h001"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Classic Swiss Army" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/swissarmy_hombre.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Una fragancia aromática fresca para los caballeros que son sinónimo de refinamiento y visión.
+</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="1160" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="5" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value=""checked="checked" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar5" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="h002"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Michael Kors" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/MK_hombre.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Originado en Estados Unidos.
+</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="1240" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="12" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value=""checked="checked" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar6" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="h003"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Fraiche Versace" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/Versace_hombre.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Limón blanco, madera de palo rosa, corazón de hojas de cedro, estragón, salvia, sicomoro, almizcle y ámbar.</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="1440" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="11" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value=""checked="checked" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar7" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="n001"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Yellow Bird" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/Yellow_ninos.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Botella transparente con forma de angry bird.</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="305" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="10" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value="" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" checked="checked" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar8" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="n002"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Tous baby" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/Tous_ninos.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">Envase trasparente y verde</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="780" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="13" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value="" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" checked="checked" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+
+<div data-role="page" id="editar9" data-theme="c">
+   <div data-role="header" data-theme="c">
+    <h1>Editar Producto</h1>
+   </div>
+   <div data-role="content">
+    <p align="center">
+    <a href="#edit"><img src="imagenes/edit.png" height="90" width="90"></a>
+    <a href="#eliminar"><img src="imagenes/de.png" height="90" width="90"></a>
+    <p>
+     <div data-role="fieldcontain">
+       <label for="textinput">Clave:</label>
+       <input type="text" name="textinput" id="textinput" value="n003"  placeholder="Ingresa la clave"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput1">Nombre:</label>
+       <input type="text" name="textinput1" id="textinput1" value="Candy Crush Sweet" placeholder="Ingresa el Nombre"/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="imagen">Imagen:</label>
+       <img src="imagenes/CandyCrush_ninos.png" width="286" height="185">
+       <input type="file" name="imagen" id="imagen" value=""/>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput2">Descripcion:</label>
+       <textarea name="textinput2" id="textinput2" value=""placeholder="Ingresa la Descripcion" rows="7">País de origen España. El juego más emocionante trae su nueva fragancia Candy Crush Sweet para ti con notas de manzana, ciruelas, rosas, lilis y vainilla.</textarea>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider">Precio:</label>
+       <input type="range" name="slider" id="slider" value="500" min="0" max="5000" />
+     </div>
+     <div data-role="fieldcontain">
+       <label for="slider1">Existencia:</label>
+       <input type="range" name="slider1" id="slider1" value="10" min="0" max="100" />
+     </div>
+     <div data-role="fieldcontain">
+       <fieldset data-role="controlgroup">
+         <legend>Categoria:</legend>
+         <input type="radio" name="radio1" id="radio1_0" value="" />
+         <label for="radio1_0">Damas</label>
+         <input type="radio" name="radio1" id="radio1_1" value="" />
+         <label for="radio1_1">Caballeros</label>
+         <input type="radio" name="radio2" id="radio1_2" value="" checked="checked" />
+         <label for="radio1_2">Niños</label>
+       </fieldset>
+     </div>
+     <div data-role="fieldcontain">
+       <label for="textinput4">Fecha de Registro:</label>
+       <input type="text" name="textinput4" id="textinput4" value="28/05/2016" placeholder="Ingresa la Fecha" />
+     </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-id="footerPpal"  data-theme="c">
+    <div data-role="navbar">
+    <ul>
+       <li><a href="#" data-role="button" data-icon="arrow-l"  data-rel="back">Atrás</a></li>
+       <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+       <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+       <li><a href="#" data-role="button" data-icon="arrow-r">Siguiente</a></div></li>
+   </ul>
+   </div>
+</div>
+<!--mensajes-->
+       <div data-role="page" id="carrito" data-theme="c">
+        <div data-role="header" data-theme="c">
+          <h1>Carrito de Compras</h1>
+        </div>
+        <p align="center">
+           <img src="imagenes/cart.png" height="150" width="150"/>
+         </p>
+        <div data-role="content">
+          <p align="center">¡Producto agregado al carrito de compras!</p>
+          <a href="#" data-rel="back" data-role="button">Cerrar</a>
+        </div>
+      </div>
+
+      <div data-role="page" id="save" data-theme="c">
+        <div data-role="header" data-theme="c">
+          <h1>Producto Guardado</h1>
+        </div>
+        <p align="center">
+           <img src="imagenes/add.png" height="150" width="150"/>
+         </p>
+        <div data-role="content">
+          <div align="center">¡PRODUCTO GUARDADO CORRECTAMENTE!</div>
+          <a href="#home"  data-role="button">Cerrar</a>
+        </div>
+      </div>
+      
+      <div data-role="page" id="edit" data-theme="c">
+        <div data-role="header" data-theme="c">
+          <h1>Producto Editado</h1>
+        </div>
+        <p align="center">
+           <img src="imagenes/edit.png" height="150" width="150"/>
+         </p>
+        <div data-role="content">
+          <div align="center">¡PRODUCTO EDITADO CORRECTAMENTE!</div>
+          <a href="#home"  data-role="button">Cerrar</a>
+        </div>
+      </div>
+
+      <div data-role="page" id="eliminar" data-theme="c">
+        <div data-role="header" data-theme="c">
+          <h1>Eliminar</h1>
+        </div>
+        <p align="center">
+           <img src="imagenes/warnig.png" height="99" width="113"/>
+         </p>
+        <div data-role="content">
+          <p align="center">¿Estás seguro que quieres eliminar este producto?</p>
+          <a href="#home" data-role="button">Aceptar</a>
+          <a href="#" data-rel="back" data-role="button">Cancelar</a>
+        </div>
+      </div>
+      
+       <div data-role="page" id="pay" data-theme="c">
+        <div data-role="header" data-theme="c">
+          <h1>LOGIN PayPal</h1>
+        </div>
+        <p align="center">
+           <img src="imagenes/paypal.png" height="150" width="150"/>
+         </p>
+        <div data-role="content">
+           <div data-role="fieldcontain">
+           <label for="textinput">Correo:</label>
+           <input type="email" name="textinput" id="textinput" value=""  placeholder="ejemplo@ex.com"/>
+           </div>
+           <div data-role="fieldcontain">
+           <label for="textinput1">Contraseña:</label>
+           <input type="password" name="textinput1" id="textinput1" value="" placeholder="Ingresa la Contraseña"/>
+           </div>
+          <a href="#pal" data-role="button">Aceptar</a>
+          <a href="#" data-rel="back" data-role="button">Cancelar</a>
+        </div>
+      </div>
+      
+      <div data-role="page" id="pal" data-theme="c">
+        <div data-role="header" data-theme="c">
+          <h1>Pago Realizadó</h1>
+        </div>
+        <p align="center">
+           <img src="imagenes/paypal.png" height="150" width="150"/>
+         </p>
+        <div data-role="content">
+          <div align="center">¡SU PAGO SE A REALIZADO CORRECTAMENTE!</div>
+          <a href="#home"  data-role="button">Cerrar</a>
+        </div>
+      </div>   
+</body>
+</html>
+
